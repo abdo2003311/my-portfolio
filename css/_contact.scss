@@ -1,0 +1,42 @@
+.contact{
+    background: url("../images/large-triangles.svg");
+    padding: 4vw 2vw;
+    ::placeholder{
+        color: #000;
+    }
+    .form{
+        padding-bottom: .5vw;
+        h1{
+            margin-bottom: 0;
+        }
+        background: #011f2f;
+        color: #fff;
+        text-align: center;
+        width: 40vw;
+        border-radius: $borderRadius;
+        margin: auto;
+        input,textarea{
+            padding: 1vw;
+            margin: 1vw;
+            width: 38vw;
+            display: block;
+            border-radius: $borderRadius;
+            border:0;
+        }
+        input[type="submit"]{
+            @extend %transYani;
+            background: linear-gradient(90deg,#276fe3,#d93131);
+            color: #fff;
+        }
+    }
+}
+@media (max-width:768px) {
+	.contact{
+		.form{
+			width: 80vw;
+			input,textarea{
+				width: 78vw;
+			}
+		}
+	}
+}

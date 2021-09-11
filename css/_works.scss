@@ -1,0 +1,74 @@
+.works{
+    padding: 2vw;
+    background: $secColor;
+    color: $secColor;
+    h1{
+        color: #fff;
+    }
+    .pItem{
+        margin: .5vw;
+        border-radius: $borderRadius;
+        overflow: hidden;
+        text-align: center;
+        background: #fff;
+        position: relative;
+        overflow: hidden;
+        transition: .3s;
+        &:hover .hiddenDetails{
+            bottom: 0;
+        }
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        .hiddenDetails{
+            z-index: 1000;
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            width: 100%;
+            transition: .3s;
+            background: #fff;
+            text-transform: capitalize;
+            h4{
+                font-size: 1.8vw;
+                margin-bottom: 0;
+            }
+            & > div{
+                padding: 2vw
+            }
+        }
+        img{
+            width: 100%;
+            height: 25vh
+        }
+    }
+}
+@media (max-width:768px) {
+	.works{
+		.pItem{
+        &:hover{
+            cursor: pointer;
+						transform: scale(1);
+        }
+        .hiddenDetails{
+            z-index: 1000;
+            width: 100%;
+            transition: .3s;
+            background: #fff;
+            text-transform: capitalize;
+						position: static;
+            h4{
+                font-size: 1.8vw;
+                margin-bottom: 0;
+            }
+            & > div{
+                padding: 2vw
+            }
+        }
+			img{
+				height: auto;
+			}
+		}
+	}
+}

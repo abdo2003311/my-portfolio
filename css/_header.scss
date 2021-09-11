@@ -1,0 +1,45 @@
+#rain{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    width: 100vw;
+    height: 100vh;
+}
+header{
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/wave.svg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 2vw;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    .row{
+        div:first-of-type{
+            padding: 5vw
+        }
+    }
+    img{
+        position: absolute;
+        width: 30vw;
+        right: 2vw;
+        bottom: 0vw;
+    }
+}
+@media (max-width:768px) {
+	#rain{
+		height: 100%
+	}
+	header{
+		background-image: none;
+		height: auto;
+		img{
+			position: static;
+			top: auto;
+			left: auto;
+		}
+	}
+}

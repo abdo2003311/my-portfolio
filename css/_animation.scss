@@ -1,0 +1,10 @@
+.animation{
+    padding: 2vw;
+    canvas{
+        border-radius: $borderRadius;
+        @include boxShadow(#ccc);
+        width: 100%;
+        height: 90%;
+        margin-top: 2vw;
+    }
+}

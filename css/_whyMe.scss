@@ -1,0 +1,12 @@
+.whyMe{
+		padding: 2vw;
+    background: $mainColor;
+    color: #fff;
+    canvas{
+				margin: 2vw auto;
+				display: block;
+        background: #fff;
+        border-radius: $borderRadius;
+        @include boxShadow(#000);
+    }
+}

@@ -1,0 +1,50 @@
+.services{
+    padding: 2vw;
+    .wrapper{
+        &:hover .customCard:before{
+            bottom: 0;
+        }
+        &:hover{
+            color: #fff;
+            cursor: pointer;
+        }
+        .customCard{
+            margin: 1vw;
+            padding: 2vw;
+            text-align: center;
+            @include boxShadow(#ccc);
+            border-radius: $borderRadius;
+            position: relative;
+            overflow: hidden;
+            &:before{
+                z-index: -100;
+                content: " ";
+                background: $mainColor;
+                position: absolute;
+                bottom: -99%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: .3s;
+            }
+            h2{
+                margin: 2vw 0vw;
+            }
+            img{
+                width: 20vw;
+            }
+        }        
+    }
+}
+@media (max-width:768px) {
+	.services{
+		.wrapper{
+			&:hover .customCard:before{
+				bottom: -99% !important
+			}
+			&:hover{
+				color: $secColor
+			}
+		}
+	}
+}
