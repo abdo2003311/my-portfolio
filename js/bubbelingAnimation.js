@@ -28,7 +28,9 @@ canvas1.addEventListener("mouseout",function (e) {
         y: undefined
     }
 })
-
+canvas1.addEventListener('touchmove',(e)=>{
+    console.log(e)
+})
 function CircleObject(i,x, y, dx, dy, r) {
     this.order = i;
     this.x = x;
@@ -92,7 +94,7 @@ function CircleObject(i,x, y, dx, dy, r) {
 
 function init() {
 		circleArray = [];
-		for (i = 0; i < 200; i += 1) {
+		for (i = 0; i < 100; i += 1) {
 			var r  = (Math.random() * innerWidth) / 100 + innerWidth / 150,
 					x = Math.random() * (canvas1.width - r * 2) + r,
 					y = Math.random() * (canvas1.height - r * 2) + r,
