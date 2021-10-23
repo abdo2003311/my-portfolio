@@ -29,8 +29,8 @@ canvas1.addEventListener("mouseout",function (e) {
     }
 })
 canvas1.addEventListener('touchmove',function (e){
-    mouse.x = e.__proto__.targetTouches[0].clientX - canvas1.getBoundingClientRect().x;
-    mouse.y = e.__proto__.targetTouches[0].clientY - canvas1.getBoundingClientRect().y;
+    mouse.x = e.targetTouches[0].clientX - canvas1.getBoundingClientRect().x;
+    mouse.y = e.targetTouches[0].clientY - canvas1.getBoundingClientRect().y;
 },true)
 function Circle(i,x, y, dx, dy, r) {
     this.order = i;
