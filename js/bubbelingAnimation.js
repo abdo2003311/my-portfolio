@@ -29,8 +29,7 @@ canvas1.addEventListener("mouseout",function (e) {
     }
 })
 canvas1.addEventListener('touchmove',(e)=>{
-    mouse.x = e.x - canvas1.getBoundingClientRect().x;
-    mouse.y = e.y - canvas1.getBoundingClientRect().y;
+    console.log(e)
 })
 function CircleObject(i,x, y, dx, dy, r) {
     this.order = i;
